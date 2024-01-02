@@ -17,6 +17,8 @@ Niye Jao Backend serves as the backend infrastructure for the Niye Jao ride-shar
 - MongoDB (via Mongoose)
 - bcrypt, body-parser, cors, dotenv, jsonwebtoken for authentication
 
+## Visit the live application: [Live Server Link](https://ridesharebd.netlify.app/)
+
 ## Environment Variables
 
 Make sure to set the following environment variables in your `.env` file:
