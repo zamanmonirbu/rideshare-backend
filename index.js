@@ -1,6 +1,7 @@
 const userRoutes = require("./Routes/UserRoutes");
 const riderRouters = require("./Routes/RiderRoutes");
 const bookingRouters = require("./Routes/BookingRoutes");
+const comments=require('./Routes/commentRoutes');
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -32,6 +33,7 @@ mongoose.connection.on("error", (err) => {
 app.use(userRoutes);
 app.use(bookingRouters);
 app.use(riderRouters);
+app.use("/comment",comments);
 
 
 const port = process.env.PORT || 3000;
